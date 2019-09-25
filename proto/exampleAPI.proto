@@ -1,13 +1,16 @@
 // proto/exampleAPI.proto
 syntax = "proto3";
-
+// define the name of the package
 package exampleAPI;
-
+// define the name of the service(s)
 service ChattyMicroservice {
-  rpc BidiMath (stream Benchmark) returns (stream Benchmark) {};
+  // define the rpc method and what it returns
+  //            invocation                 execution
+  rpc BidiMath (stream Benchmark) returns (stream Benchmark);
 }
-
+// define the name of the message(s)
 message Benchmark {
+  // define the type and the index of the field
   double requests = 1;
   double responses = 2;
 }
