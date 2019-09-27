@@ -13,5 +13,5 @@ const descriptor = loadPackageDefinition(definition);
 // descriptor Object contains a lot of data, all we need is the package
 const package = descriptor.exampleAPI 
 
-// export the package we named in the .proto
+// export the package we named in the .proto file
 module.exports = package;
