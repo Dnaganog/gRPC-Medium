@@ -11,6 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node server/server.js",
+    "client": "node client/chattyMicroservice.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

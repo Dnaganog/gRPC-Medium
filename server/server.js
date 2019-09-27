@@ -48,10 +48,12 @@ const server = new Server();
 server.addService( 
   // the service Object is the package.ServiceName.service 
   ChattyMicroservice.service,
-  // the rpc method and it's attached function for execution 
+  // the rpc method and it's attached function for execution
+  // effectively this Object is how we handle server routing
+  // each property is like an endpoint
   { BidiMath: BidiMathExecution }
 );
-// binds the server to a socket with security
+// binds the server to a socket with a security level
 // can be bound to any number of sockets
 server.bind('0.0.0.0: 3000', ServerCredentials.createInsecure())
 // starts the server listening on the designated socket(s)
