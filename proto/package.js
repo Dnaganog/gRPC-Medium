@@ -14,4 +14,5 @@ const descriptor = loadPackageDefinition(definition);
 const package = descriptor.exampleAPI 
 
 // export the package we named in the .proto file
+// woo
 module.exports = package;
